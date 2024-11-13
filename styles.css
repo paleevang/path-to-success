@@ -183,6 +183,36 @@ table {
         background-color: var(--white);
     }
 
+    /* Pricing section */
+    .pricing {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    table, th, td {
+        border: 3px solid var(--yellow);
+    }
+
+    table {
+        background-color: var(--yellow);
+        margin: 10px auto;
+        width: 60%;
+    }
+
+    tr th {
+        padding: 10px 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    td {
+        background-color: var(--white);
+        padding: 10px 20px;
+    }
+
+    .cost {
+        padding: 15px;
+    }
     /* Take the first step today section */
     .ttfst {
         background-color: var(--pink);
