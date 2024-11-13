@@ -87,18 +87,21 @@ table {
 
     h2 {
         font-size: 2em;
+        padding-left: 10px;
     }
 
     h3 {
         font-size: 1.5em;
         color: var(--yellow);
         font-weight: bold;
+        padding-left: 10px;
     }
 
     h4 {
         font-size: 1.15em;
         color: var(--lavender);
         font-weight: bold;
+        margin: 10px 0px;
     }
 
     /* Header */
@@ -114,6 +117,62 @@ table {
     /* Body */
     body {
         background-color: var(--purple);
+    }
+
+    /* Grids */
+    .services-grid {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: var(--white);
+    }
+    
+    .services-grid p {
+        line-height: 1.5;
+    }
+
+    /* Take the first step today section */
+    .ttfst {
+        background-color: var(--pink);
+        padding: 10px;
+    }
+
+    .ttfst h2 + p {
+        color: var(--white);
+        line-height: 1.5;
+        margin: 10px;
+    }
+
+    .ttfst p:nth-of-type(2) {
+        background-color: var(--white);
+        padding: 20px;
+        margin: auto;
+        text-align: center;
+        width: 75%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 1);
+    }
+
+    [title="SN"] {
+        font-weight: bold;
+        color: var(--dark-gray);
+        text-decoration: none;
+    }
+    
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--lavender);
+        margin-bottom: 50px;
+        padding: 50px;
+        border-radius: 0 0 40px 40px;
+        color: var(--white);
+    }
+
+    footer a{
+        color: var(--white);
     }
 }
 
