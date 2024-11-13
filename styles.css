@@ -111,7 +111,7 @@ table {
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
         position: relative;
-        z-index: 2;
+        z-index: 2; /* Ensure h1 stays in front */
     }
 
     header p {
@@ -125,8 +125,8 @@ table {
         width: 87%;
         margin: -8px auto 0;
         text-align: center;
-        position:relative;
-        z-index: 1;
+        position: relative;
+        z-index: 1; /* Lower z-index to position behind h1 */
     }
 
     /* Body */
@@ -144,6 +144,43 @@ table {
     
     .services-grid p {
         line-height: 1.5;
+    }
+
+    /* Why choose us section */
+    #WCU {
+        background-color: var(--pink);
+        padding: 15px;
+    }
+
+    #WCU ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* creates two equal-width columns. */
+        grid-template-rows: auto auto; /* 2 rows. Each with a height that automatically adjusts based on content. */
+        gap: 10px;
+        padding-top: 15px;
+    }
+
+    #WCU li {
+        text-align: center;
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 30px;
+    }
+    
+    #PA {
+        background-color: var(--teal);
+    }
+
+    #PR {
+        background-color: var(--lavender);
+    }
+
+    #SE {
+        background-color: var(--yellow);
+    }
+
+    #FO {
+        background-color: var(--white);
     }
 
     /* Take the first step today section */
