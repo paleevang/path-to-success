@@ -106,12 +106,27 @@ table {
 
     /* Header */
     header h1 {
-        background-color: var(--purple);
+        background-color: var(--lavender);
+        padding: 40px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        position: relative;
+        z-index: 2;
     }
 
     header p {
         background-color: var(--pink);
         color: var(--white);
+        padding-top: 25px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0px 0px 30px 30px;
+        width: 87%;
+        margin: -8px auto 0;
+        text-align: center;
+        position:relative;
+        z-index: 1;
     }
 
     /* Body */
