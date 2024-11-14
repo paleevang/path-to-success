@@ -414,5 +414,35 @@ table {
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 @media screen and (min-width: 1280px) {
+    /* Body */
+    body {
+        margin: 0px 100px;
+    }
     
+    /* Header navigation */
+    header nav ul {
+        width: 40%;
+    }
+
+    header nav ul li {
+        font-size: .8em;
+    }
+
+    /* Pricing section */
+    .pricing {
+        padding-left: 20px;
+    }
+
+    #pricing-tables {
+        justify-content: space-around;
+    }
+
+    /* Take the first step today section */
+    .ttfst p:first-child {
+        text-align: left;
+    }
+
+    .ttfst p:nth-of-type(2) {
+        width: 60%;
+    }
 }
