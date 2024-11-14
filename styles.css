@@ -79,6 +79,7 @@ table {
 
     h1 {
         font-size: 3em;
+        text-align: center;
     }
 
     nav h2 {
@@ -114,7 +115,11 @@ table {
         z-index: 2; /* Ensure h1 stays in front */
     }
 
-    header p {
+    #long-text {
+        visibility: hidden;
+    }
+
+    #short-text {
         background-color: var(--pink);
         color: var(--white);
         padding-top: 25px;
@@ -219,7 +224,7 @@ table {
         padding: 10px;
     }
 
-    .ttfst h2 + p {
+    #ttfst-content p:first-of-type {
         color: var(--white);
         line-height: 1.5;
         margin: 10px;
@@ -260,12 +265,151 @@ table {
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 @media screen and (min-width: 620px) {
+    /* Header */
+    #long-text {
+        visibility: visible;
+        background-color: var(--pink);
+        color: var(--white);
+        padding-top: 25px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0px 0px 30px 30px;
+        width: 90%;
+        margin: -45px auto 0;
+        text-align: center;
+        position: relative;
+        z-index: 1; /* Lower z-index to position behind h1 */
+    }
+
+    #short-text {
+        visibility: hidden;
+    }
     
+    /* Grids */
+    [title="two"] {
+        width: 50%;
+    }
+
+    .two-flex {
+        display: flex;
+    }
+
+    /* Why choose us section */
+    #WCU ul {
+        display: flex;
+    }
+
+    /* Pricing section */
+    #pricing-tables {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Take the first step today section */
+    #ttfst-content {
+        display: flex;
+    }
+
+    .ttfst p:nth-of-type(2) {
+        position: relative; /* Enable positioning */
+        top: -60px; /* Adjust the value to move it up further */
+        width: 250%;
+    }
 }
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 @media screen and (min-width: 950px) {
+    /* Header navigation */
+    #long-text {
+        width: 95%;
+        margin: -50px auto 0;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--yellow);
+        width: 60%;
+        padding: 10px 30px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--dark-gray);
+    }
+
+    /* Our services section */
+    #our-services {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    [title="two"] {
+        width: auto;
+    }
     
+    .two-flex {
+        display: contents;
+    }
+
+    .our-services-grid h3{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #overall-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .services-grid {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    /* Why choose us section */
+    #WCU ul {
+        justify-content: space-around;
+    }
+    
+    #WCU li {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    /* Pricing */
+    #pricing-tables  {
+        display: flex;
+    }
+
+    .tables-section h3 {
+        font-size: 1.2em;
+    }
+
+    /* Take the first step today */
+    .ttfst {
+        padding: 10px 20px;
+    }
+
+    .ttfst p:first-child {
+        text-align: justify;
+    }
+
+    .ttfst p:nth-of-type(2) {
+        top: -25px;
+        width: 150%;
+        margin: auto 80px;
+    }
 }
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/

@@ -10,7 +10,8 @@
         <!-- HEADER -->
         <header>
             <h1>Path to Success</h1>
-            <p>Unlock your full potential</p>
+            <p id="short-text">Unlock your full potential</p>
+            <p id="long-text">Unlock your full potential with personalized life coaching</p>
             <nav>
                 <ul>
                     <li><a href="#">Our Services</a></li>
@@ -24,53 +25,67 @@
         <!-- MAIN -->
         <main>
             <!-- OUR SERVICES -->
-            <h2>Our Services</h2>
+            <h2 id="our-services">Our Services</h2>
 
-            <!-- One on one coaching -->
-            <h3>One-on-One Coaching</h3>
-            <section class="services-grid">
-                <img src="images/personal-development.png" alt="teal icon of a smiling face">
-                <h4>Personal Development</h4>
-                <p>Identify and overcome obstacles holding you back from living your best life. Whether it's building confidence, breaking bad habits, or discovering your true purpose, we'll work together to create a clear roadmap for success.</p>
-            </section>
-            <section class="services-grid">
-                <img src="images/career-coaching.png" alt="lavender icon of a briefcase">
-                <h4>Career Coaching</h4>
-                <p>Feeling stuck in your career? We'll help you clarify your goals, develop a plan for advancement, and build the skills needed to thrive in your professional life.</p>
-            </section>
-            <section class="services-grid">
-                <img src="images/relationship-coaching.png" alt="pink icon of a heart">
-                <h4>Relationship Coaching</h4>
-                <p>Enhance your relationships with better communication, understanding, and empathy. Whether it's family, friends, or partners, we'll help you build stronger connections.</p>
-            </section>
+            <section id="overall-grid">
+                <!-- One on one coaching -->
+                <div class="our-services-grid">
+                    <h3>One-on-One Coaching</h3>
+                    <div class="two-flex">
+                        <section class="services-grid" title="two">
+                            <img src="images/personal-development.png" alt="teal icon of a smiling face">
+                            <h4>Personal Development</h4>
+                            <p>Identify and overcome obstacles holding you back from living your best life. Whether it's building confidence, breaking bad habits, or discovering your true purpose, we'll work together to create a clear roadmap for success.</p>
+                        </section>
+                        <section class="services-grid" title="two">
+                            <img src="images/career-coaching.png" alt="lavender icon of a briefcase">
+                            <h4>Career Coaching</h4>
+                            <p>Feeling stuck in your career? We'll help you clarify your goals, develop a plan for advancement, and build the skills needed to thrive in your professional life.</p>
+                        </section>
+                    </div>
+                    <section class="services-grid">
+                        <img src="images/relationship-coaching.png" alt="pink icon of a heart">
+                        <h4>Relationship Coaching</h4>
+                        <p>Enhance your relationships with better communication, understanding, and empathy. Whether it's family, friends, or partners, we'll help you build stronger connections.</p>
+                    </section>
+                </div>
 
-            <!-- Group Coaching -->
-            <h3>Group Coaching</h3>
-            <section class="services-grid">
-                <img src="images/supportive-community.png" alt="yellow icon of hands clasping">
-                <h4>Supportive Community</h4>
-                <p>Join a group of like-minded individuals on a similar journey. Share experiences, gain insights, and grow together in a safe, supportive environment.</p>
-            </section>
-            <section class="services-grid">
-                <img src="images/focused-session.png" alt="teal icon of a clock face">
-                <h4>Focused Sessions</h4>
-                <p>Our group coaching sessions focus on specific themes such as confidence-building, time management, or work-life balance. Each session is designed to provide actionable takeaways that you can apply immediately.</p>
-            </section>
+                <!-- Group Coaching -->
+                <div class="our-services-grid">
+                    <h3>Group Coaching</h3>
+                    <div class="two-flex">
+                        <section class="services-grid" title="two">
+                            <img src="images/supportive-community.png" alt="yellow icon of hands clasping">
+                            <h4>Supportive Community</h4>
+                            <p>Join a group of like-minded individuals on a similar journey. Share experiences, gain insights, and grow together in a safe, supportive environment.</p>
+                        </section>
+                        <section class="services-grid" title="two">
+                            <img src="images/focused-session.png" alt="teal icon of a clock face">
+                            <h4>Focused Sessions</h4>
+                            <p>Our group coaching sessions focus on specific themes such as confidence-building, time management, or work-life balance. Each session is designed to provide actionable takeaways that you can apply immediately.</p>
+                        </section>
+                    </div>
+                </div>
 
-            <!-- Workshops & Seminars -->
-            <h3>Workshops & Seminars</h3>
-            <section class="services-grid">
-                <img src="images/interactive-learning.png" alt="lavender icon of text conversation">
-                <h4>Interactive Learning</h4>
-                <p>Participate in our interactive workshops and seminars that cover a range of topics, from goal setting to stress management. These events are designed to provide practical tools and strategies that you can implement in your daily life.</p>
-            </section>
+                <!-- Workshops & Seminars -->
+                <div class="our-services-grid">
+                    <h3>Workshops & Seminars</h3>
+                    <section class="services-grid">
+                        <img src="images/interactive-learning.png" alt="lavender icon of text conversation">
+                        <h4>Interactive Learning</h4>
+                        <p>Participate in our interactive workshops and seminars that cover a range of topics, from goal setting to stress management. These events are designed to provide practical tools and strategies that you can implement in your daily life.</p>
+                    </section>
+                </div>
 
-            <!-- Online Courses -->
-            <h3>Online Courses</h3>
-            <section class="services-grid">
-                <img src="images/flexible-learning.png" alt="pink icon of a curly arrow">
-                <h4>Flexible Learning</h4>
-                <p>Access our online courses at your convenience. With video lessons, downloadable resources, and exercises, you can learn at your own pace from the comfort of your home.</p>
+                <!-- Online Courses -->
+                <div class="our-services-grid">
+                    <h3>Online Courses</h3>
+                    <section class="services-grid">
+                        <img src="images/flexible-learning.png" alt="pink icon of a curly arrow">
+                        <h4>Flexible Learning</h4>
+                        <p>Access our online courses at your convenience. With video lessons, downloadable resources, and exercises, you can learn at your own pace from the comfort of your home.</p>
+                    </section>
+                </div>
             </section>
 
             <!-- WHY CHOOSE US -->
@@ -87,83 +102,95 @@
             <!-- PRICING -->
             <h2 class="pricing">Pricing</h2>
 
-            <!-- One-on-One Coaching -->
-            <h3>One-on-One Coaching</h3>
-            <table>
-                <tr>
-                    <th>Service</th>
-                    <th class="cost">Cost</th>
-                </tr>
-                <tr>
-                    <td>Single Session</td>
-                    <td class="cost">$150</td>
-                </tr>
-                <tr>
-                    <td>Monthly Package</td>
-                    <td class="cost">$550</td>
-                </tr>
-                <tr>
-                    <td>3-Month Package</td>
-                    <td class="cost">$1500</td>
-                </tr>
-            </table>
+            <div id="pricing-tables">
+                <!-- One-on-One Coaching -->
+                <div class="tables-section">
+                    <h3>One-on-One Coaching</h3>
+                    <table>
+                        <tr>
+                            <th>Service</th>
+                            <th class="cost">Cost</th>
+                        </tr>
+                        <tr>
+                            <td>Single Session</td>
+                            <td class="cost">$150</td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Package</td>
+                            <td class="cost">$550</td>
+                        </tr>
+                        <tr>
+                            <td>3-Month Package</td>
+                            <td class="cost">$1500</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <!-- Group Coaching -->
-            <h3>Group Coaching</h3>
-            <table>
-                <tr>
-                    <th>Service</th>
-                    <th class="cost">Cost</th>
-                </tr>
-                <tr>
-                    <td>Single Session</td>
-                    <td class="cost">$75</td>
-                </tr>
-                <tr>
-                    <td>Monthly Package</td>
-                    <td class="cost">$250</td>
-                </tr>
-            </table>
+                <!-- Group Coaching -->
+                <div class="tables-section">
+                    <h3>Group Coaching</h3>
+                    <table>
+                        <tr>
+                            <th>Service</th>
+                            <th class="cost">Cost</th>
+                        </tr>
+                        <tr>
+                            <td>Single Session</td>
+                            <td class="cost">$75</td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Package</td>
+                            <td class="cost">$250</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <!-- Workshops & Seminars -->
-            <h3>Workshops & Seminars</h3>
-            <table>
-                <tr>
-                    <th>Service</th>
-                    <th class="cost">Cost</th>
-                </tr>
-                <tr>
-                    <td>Single Workshop</td>
-                    <td class="cost">$150</td>
-                </tr>
-                <tr>
-                    <td>Seminar Series</td>
-                    <td class="cost">$250</td>
-                </tr>
-            </table>
+                <!-- Workshops & Seminars -->
+                <div class="tables-section">
+                    <h3>Workshops & Seminars</h3>
+                    <table>
+                        <tr>
+                            <th>Service</th>
+                            <th class="cost">Cost</th>
+                        </tr>
+                        <tr>
+                            <td>Single Workshop</td>
+                            <td class="cost">$150</td>
+                        </tr>
+                        <tr>
+                            <td>Seminar Series</td>
+                            <td class="cost">$250</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <!-- Online Courses -->
-            <h3>Online Courses</h3>
-            <table>
-                <tr>
-                    <th>Service</th>
-                    <th class="cost">Cost</th>
-                </tr>
-                <tr>
-                    <td>Single Workshop</td>
-                    <td class="cost">$150</td>
-                </tr>
-                <tr>
-                    <td>Webinar Series</td>
-                    <td class="cost">$250</td>
-                </tr>
-            </table>
+                <!-- Online Courses -->
+                <div class="tables-section">
+                    <h3>Online Courses</h3>
+                    <table>
+                        <tr>
+                            <th>Service</th>
+                            <th class="cost">Cost</th>
+                        </tr>
+                        <tr>
+                            <td>Single Workshop</td>
+                            <td class="cost">$150</td>
+                        </tr>
+                        <tr>
+                            <td>Webinar Series</td>
+                            <td class="cost">$250</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
 
             <!-- TAKE THE FIRST STEP TODAY -->
             <section class="ttfst">
                 <h2>Take the First Step Today</h2>
-                <p>Your journey to a more fulfilling life begins with a single step. Book a free 30-minute consultation today to discover how our coaching services can help you achieve your goals. Let's work together to create the life you've always dreamed of!</p>
-                <p><a href="#" title="SN">SCHEDULE NOW</a></p>
+                <div id="ttfst-content">
+                    <p>Your journey to a more fulfilling life begins with a single step. Book a free 30-minute consultation today to discover how our coaching services can help you achieve your goals. Let's work together to create the life you've always dreamed of!</p>
+                    <p><a href="#" title="SN">SCHEDULE NOW</a></p>
+                </div>
             </section>
         </main>
 
