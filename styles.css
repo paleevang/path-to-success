@@ -105,10 +105,14 @@ table {
         margin: 10px 0px;
     }
 
+    #our-services {
+        margin-top: 40px;
+    }
+
     /* Header */
     header h1 {
         background-color: var(--lavender);
-        padding: 40px;
+        padding: 50px 40px;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
         position: relative;
@@ -132,6 +136,33 @@ table {
         text-align: center;
         position: relative;
         z-index: 1; /* Lower z-index to position behind h1 */
+    }
+
+    /* Header navigation */
+    header nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        z-index: 2;
+        background-color: var(--yellow);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    header nav ul {
+        display: none; /* Hide navigation list by default */
+    }
+    
+    header nav .menu-button {
+        display: block;
+        width: 70px;
+        padding: 0px 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.5em;
+        color: var(--dark-gray);
     }
 
     /* Body */
@@ -328,16 +359,10 @@ table {
 
     header nav ul {
         display: flex;
-        justify-content: space-between;
-        background-color: var(--yellow);
-        width: 60%;
-        padding: 10px 30px;
+        gap: 20px;
+        padding: 5px 20px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
     }
 
     header nav ul li a {
@@ -345,6 +370,10 @@ table {
         text-transform: uppercase;
         font-weight: bold;
         color: var(--dark-gray);
+    }
+
+    header nav .menu-button {
+        display: none; /* Hide the "Menu" button on larger screens */
     }
 
     /* Our services section */
@@ -421,7 +450,7 @@ table {
     
     /* Header navigation */
     header nav ul {
-        width: 40%;
+        gap: 30px;
     }
 
     header nav ul li {
